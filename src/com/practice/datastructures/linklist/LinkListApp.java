@@ -11,14 +11,24 @@ class LinkListApp {
 		theList.insertFirst(88, 8.99);
 		theList.displayLinkList(); // display list
 		
-		while (!theList.isEmpty()) // until it’s empty,
+		Link element = theList.find(22);
+		if(null != element){
+			element.displayLink();
+		}else{
+			System.out.println("No Element Found!!");
+		}
+		
+		theList.recursiveRev();
+		theList.displayLinkList();
+		
+		/*while (!theList.isEmpty()) // until it’s empty,
 		{
 			Link aLink = theList.deleteFirst(); // delete link
 			System.out.print("Deleted "); // display it
 			aLink.displayLink();
 			System.out.println("");
 		}
-		theList.displayLinkList(); // display list
+		theList.displayLinkList(); */// display list
 		
 	} 
 } 

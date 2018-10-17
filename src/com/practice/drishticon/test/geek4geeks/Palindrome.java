@@ -1,15 +1,22 @@
 package com.practice.drishticon.test.geek4geeks;
 
+import java.util.Scanner;
+
 public class Palindrome {
 
 	public static void main(String[] args) {
-		int numOfStrings = Integer.parseInt(args[0]);
+		
+		Scanner S = new Scanner(System.in);
+		int numOfStrings = Integer.parseInt(S.nextLine());
 		String[] strings = new String[numOfStrings];
 		
 		for(int i = 1; i <= numOfStrings; i++){
-			strings[i-1] = args[i];
+			strings[i-1] = S.nextLine();
 		}
+		S.close();
 
+		
+		
 		for(String value : strings){
 			int start = 0;
 			int end = value.length() - 1;
