@@ -22,6 +22,19 @@ public class ArraySel {
 		System.out.println();
 	}
 
+	
+	public void selectionSort2(){
+		for(int outer=0; outer < nElems-1; outer++){
+			int min = outer;
+			for(int inner=outer+1; inner < nElems;inner++){
+				if(arr[inner]< arr[min]){
+					min = inner;
+				}
+			}
+			
+			swap(outer, min);
+		}
+	}
 	public void selectionSort() {
 
 		

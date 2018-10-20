@@ -22,6 +22,7 @@ public class ArrayBub {
 		System.out.println("");
 	}
 	
+	//practice
 	public void bubbleSort2(){
 		int inner = 0;
 		int outer = nElems-1;

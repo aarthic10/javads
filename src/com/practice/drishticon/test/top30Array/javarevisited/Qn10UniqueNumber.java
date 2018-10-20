@@ -2,14 +2,40 @@ package com.practice.drishticon.test.top30Array.javarevisited;
 
 public class Qn10UniqueNumber {
 	public static void main(String args[]) {
-		int i = findUniqueNumber(new int[] { 1, 1, 2, 2, 3, 4, 4, 5, 5 });
+		/*int i = findUniqueNumber(new int[] { 1, 1, 2, 2, 3, 4, 4, 5, 5 });
 		System.out.println(i);
 		printXORUniqueNumber(new int[] { 1, 1, 2, 2, 4, 4, 5, 5, 7 });
 		
 		//Cant Understand
-		System.out.println(getSingle(new int[] {3, 3, 2, 3}));
+		System.out.println(getSingle(new int[] {3, 3, 2, 3}));*/
+		
+		uniqueThreeNumbers(new int[] { 1, 1, 1, 2, 2, 4, 5, 5, 5, 7 });
+		
 	}
 
+	
+	private static void uniqueThreeNumbers(int[] arr){
+		int i = 0;
+		
+		while(i < arr.length){
+			if(i+2< arr.length && arr[i]==arr[i+2]){
+				i = i+3;
+			}else if(i+1 < arr.length && arr[i]==arr[i+1]){
+				i = i+2;
+			}else{
+				System.out.println(arr[i]);
+				break;
+			}
+		}
+		
+		/*for(i=0; i<arr.length; i=i+2){
+			if(arr[i]!=arr[i+1]){
+				System.out.println(arr[i]);
+				break;
+			}
+		}*/
+	}
+	
 	/*
 	 * For instance, if your array contains the elements [3, 4, 5, 3, 4], the
 	 * algorithm will return 3 ^ 4 ^ 5 ^ 3 ^ 4 But the XOR operator ^ is

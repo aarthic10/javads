@@ -20,7 +20,7 @@ class InsertSortApp
 
       arr.display();                // display items
 
-      arr.insertionSort();          // insertion-sort them
+      arr.insertionSort2();          // insertion-sort them
 
       arr.display();                // display them again
       }  // end main()

@@ -29,6 +29,9 @@ public class mergeSortedArrays {
 				a[curr--] = b[j--];
 			}
 		}
+		for(Integer num : a){
+			System.out.println(num);
+		}
 		
 		System.out.println(a);
 	}
@@ -57,7 +60,9 @@ public class mergeSortedArrays {
 				}
 			}
 		}
-		System.out.println(c);
+		for(Integer num : c){
+			System.out.println(num);
+		}
 
 	}
 	
