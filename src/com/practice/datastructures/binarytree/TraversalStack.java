@@ -19,8 +19,9 @@ public class TraversalStack {
 		theTree.insert(93);
 		theTree.insert(97);
 		
-		theTree.postOrderTraverse();
-		theTree.stackPostOrderTraverse();
+		theTree.stackInorderTraverse();
+		/*theTree.postOrderTraverse();
+		theTree.stackPostOrderTraverse();*/
 		
 		
 	}

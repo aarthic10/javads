@@ -1,7 +1,7 @@
 package com.practice.datastructures.binarytree;
 
 public class BinaryTree {
-	private Node root;
+	public Node root;
 
 	public void displayRoot() {
 		System.out.println("Root " + root.data);
